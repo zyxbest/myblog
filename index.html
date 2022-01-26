@@ -359,7 +359,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    subtitle
+                陆子野
                 
             </div>
 
@@ -520,13 +520,31 @@
                 <div class="card-content">
                     
                         <div class="dream">
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            有两种过错是基本的，其他一切过错都由此而生：急躁和懒惰。 —— 卡夫卡
-        </div>
+  
+  <div class="row">
+    <div
+      id="subtitle"
+      class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text"
+    >
+      有两种过错是基本的，其他一切过错都由此而生：急躁和懒惰。 —— 卡夫卡
     </div>
+  </div>
 </div>
+<script>
+  $(function () {
+    var i = 1;
+    const arrstr = '有两种过错是基本的，其他一切过错都由此而生：急躁和懒惰。 —— 卡夫卡#勇往直前的勇气 直面困难的勇气 信赖他人的勇气 永远自信的勇气 —— 《国王排名》';
+    const arr = arrstr.split('#');
+    $('#indexCard').click(function () {
+      const subtitle = arr[i++];
+      console.log(i, subtitle);
+      $('.text').text(subtitle);
+      if (i == '2') {
+        i = 0;
+      }
+    });
+  });
+</script>
 
                     
 
